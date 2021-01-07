@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>初探CSS动画 | Jason の Blog</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/blog/Regeneration.png">
+    <meta name="description" content="学习笔记">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.82d37ace.css" as="style"><link rel="preload" href="/blog/assets/js/app.2bbb9c94.js" as="script"><link rel="preload" href="/blog/assets/js/2.e7e819ca.js" as="script"><link rel="preload" href="/blog/assets/js/9.5df7977f.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.1bfc5ded.js"><link rel="prefetch" href="/blog/assets/js/11.74e2be92.js"><link rel="prefetch" href="/blog/assets/js/12.53a485d0.js"><link rel="prefetch" href="/blog/assets/js/13.25b65077.js"><link rel="prefetch" href="/blog/assets/js/14.b92cd59a.js"><link rel="prefetch" href="/blog/assets/js/15.3df6fbde.js"><link rel="prefetch" href="/blog/assets/js/16.a5a0a5fe.js"><link rel="prefetch" href="/blog/assets/js/17.957cf8bc.js"><link rel="prefetch" href="/blog/assets/js/18.285bd278.js"><link rel="prefetch" href="/blog/assets/js/19.caf37a4f.js"><link rel="prefetch" href="/blog/assets/js/3.b6384ca1.js"><link rel="prefetch" href="/blog/assets/js/4.38e7285e.js"><link rel="prefetch" href="/blog/assets/js/5.e5af3f45.js"><link rel="prefetch" href="/blog/assets/js/6.401e096a.js"><link rel="prefetch" href="/blog/assets/js/7.5ae18345.js"><link rel="prefetch" href="/blog/assets/js/8.a16bcccc.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.82d37ace.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/xin.gif" alt="Jason の Blog" class="logo"> <span class="site-name can-hide">Jason の Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/js/pointToThis.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/vue/componentCommunication.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/css/FirstKnowCssAnimation.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  CSS
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/js/pointToThis.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/vue/componentCommunication.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/css/FirstKnowCssAnimation.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  CSS
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JavaScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/js/pointToThis.html" class="sidebar-link">关于this的指向</a></li><li><a href="/blog/js/AJAXFirstLearn.html" class="sidebar-link">AJAX初步认知</a></li><li><a href="/blog/js/CORSandJSONP.html" class="sidebar-link">浏览器同源策略：手动实现CORS、JSONP跨域</a></li><li><a href="/blog/js/VARandLETandCONST.html" class="sidebar-link">var和let、const的区别</a></li><li><a href="/blog/js/debounce&amp;throttle.html" class="sidebar-link">防抖和节流</a></li><li><a href="/blog/js/arrUniq.html" class="sidebar-link">数组去重</a></li><li><a href="/blog/js/shallowCopyAndDeepCopy.html" class="sidebar-link">浅拷贝和深拷贝</a></li><li><a href="/blog/js/JSInteraction.html" class="sidebar-link">JS交互DEMO 更新ing</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/vue/componentCommunication.html" class="sidebar-link">Vue组件通信</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/css/FirstKnowCssAnimation.html" aria-current="page" class="active sidebar-link">初探CSS动画</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/css/FirstKnowCssAnimation.html#_5秒实现左移动画" class="sidebar-link">5秒实现左移动画</a></li></ul></li><li><a href="/blog/css/CssVerticalAndCenter.html" class="sidebar-link">css垂直居中</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="初探css动画"><a href="#初探css动画" class="header-anchor">#</a> 初探CSS动画</h1> <h2 id="_5秒实现左移动画"><a href="#_5秒实现左移动画" class="header-anchor">#</a> 5秒实现左移动画</h2> <p>如果我们想要实现一个div向左移动的动画，应该怎么做呢?</p> <h3 id="_1-通过设定left"><a href="#_1-通过设定left" class="header-anchor">#</a> 1.通过设定left</h3> <p>css</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">#demo</span> <span class="token punctuation">{</span> <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span> <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span> <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre></div><p>html</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>js</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">var</span> moveAnimation <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      demo<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> n <span class="token operator">/</span> <span class="token number">100</span> <span class="token operator">*</span> <span class="token number">300</span> <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+      n<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token function">clearInterval</span><span class="token punctuation">(</span>moveAnimation<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span> <span class="token operator">/</span> <span class="token number">20</span><span class="token punctuation">)</span>
+</code></pre></div><p>即通过改变left实现div右移</p> <h3 id="_2-通过用transform-transition"><a href="#_2-通过用transform-transition" class="header-anchor">#</a> 2. 通过用transform + transition</h3> <p>实现思路：使用transform属性里的translateX来完成移动，然后加上transition的过渡效果。</p> <p>css</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">#demo</span> <span class="token punctuation">{</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+      <span class="token property">transition</span><span class="token punctuation">:</span> all 5s<span class="token punctuation">;</span>
+      <span class="token comment">/*让整个移动在1s内完成,transition的作用就是给我开头和结尾，我来补充中间帧*/</span>
+    <span class="token punctuation">}</span>
+
+<span class="token selector">.right</span> <span class="token punctuation">{</span>
+      <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>300px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">/*用translateX(100px)来实现右移*/</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>html</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>js</p> <div class="language-js extra-class"><pre class="language-js"><code>demo<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    demo<span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'right'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token comment">//给按钮添加点击事件，当点击按钮的时候，就给demo加上right类</span>
+</code></pre></div><h3 id="_3-用animation"><a href="#_3-用animation" class="header-anchor">#</a> 3. 用animation</h3> <p>animation的核心就是定义关键帧， 其中moveToRight是这个动画的名字</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@keyframes</span> moveToRight</span> <span class="token punctuation">{</span>
+      <span class="token selector">from</span> <span class="token punctuation">{</span>
+        <span class="token property">transform</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token selector">to</span> <span class="token punctuation">{</span>
+        <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>300px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>在#demo中添加animation</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">#demo</span> <span class="token punctuation">{</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+      <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+      <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+      <span class="token property">animation</span><span class="token punctuation">:</span>moveToRight 5s <span class="token punctuation">;</span>
+      <span class="token property">animation-fill-mode</span><span class="token punctuation">:</span>forwards<span class="token punctuation">;</span>
+      <span class="token comment">/*animation-fill-mode属性使当动画完成后，
+      保持最后一个属性值（在最后一个关键帧中定义）。*/</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/vue/componentCommunication.html" class="prev">
+        Vue组件通信
+      </a></span> <span class="next"><a href="/blog/css/CssVerticalAndCenter.html">
+        css垂直居中
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.2bbb9c94.js" defer></script><script src="/blog/assets/js/2.e7e819ca.js" defer></script><script src="/blog/assets/js/9.5df7977f.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>关于this的指向 | Jason の Blog</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/blog/Regeneration.png">
+    <meta name="description" content="学习笔记">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.82d37ace.css" as="style"><link rel="preload" href="/blog/assets/js/app.2bbb9c94.js" as="script"><link rel="preload" href="/blog/assets/js/2.e7e819ca.js" as="script"><link rel="preload" href="/blog/assets/js/17.957cf8bc.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.1bfc5ded.js"><link rel="prefetch" href="/blog/assets/js/11.74e2be92.js"><link rel="prefetch" href="/blog/assets/js/12.53a485d0.js"><link rel="prefetch" href="/blog/assets/js/13.25b65077.js"><link rel="prefetch" href="/blog/assets/js/14.b92cd59a.js"><link rel="prefetch" href="/blog/assets/js/15.3df6fbde.js"><link rel="prefetch" href="/blog/assets/js/16.a5a0a5fe.js"><link rel="prefetch" href="/blog/assets/js/18.285bd278.js"><link rel="prefetch" href="/blog/assets/js/19.caf37a4f.js"><link rel="prefetch" href="/blog/assets/js/3.b6384ca1.js"><link rel="prefetch" href="/blog/assets/js/4.38e7285e.js"><link rel="prefetch" href="/blog/assets/js/5.e5af3f45.js"><link rel="prefetch" href="/blog/assets/js/6.401e096a.js"><link rel="prefetch" href="/blog/assets/js/7.5ae18345.js"><link rel="prefetch" href="/blog/assets/js/8.a16bcccc.js"><link rel="prefetch" href="/blog/assets/js/9.5df7977f.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.82d37ace.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/xin.gif" alt="Jason の Blog" class="logo"> <span class="site-name can-hide">Jason の Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/js/pointToThis.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/vue/componentCommunication.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/css/FirstKnowCssAnimation.html" class="nav-link">
+  CSS
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/js/pointToThis.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/vue/componentCommunication.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/css/FirstKnowCssAnimation.html" class="nav-link">
+  CSS
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/js/pointToThis.html" aria-current="page" class="active sidebar-link">关于this的指向</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/js/AJAXFirstLearn.html" class="sidebar-link">AJAX初步认知</a></li><li><a href="/blog/js/CORSandJSONP.html" class="sidebar-link">浏览器同源策略：手动实现CORS、JSONP跨域</a></li><li><a href="/blog/js/VARandLETandCONST.html" class="sidebar-link">var和let、const的区别</a></li><li><a href="/blog/js/debounce&amp;throttle.html" class="sidebar-link">防抖和节流</a></li><li><a href="/blog/js/arrUniq.html" class="sidebar-link">数组去重</a></li><li><a href="/blog/js/shallowCopyAndDeepCopy.html" class="sidebar-link">浅拷贝和深拷贝</a></li><li><a href="/blog/js/JSInteraction.html" class="sidebar-link">JS交互DEMO 更新ing</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/vue/componentCommunication.html" class="sidebar-link">Vue组件通信</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/css/FirstKnowCssAnimation.html" class="sidebar-link">初探CSS动画</a></li><li><a href="/blog/css/CssVerticalAndCenter.html" class="sidebar-link">css垂直居中</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="关于this的指向"><a href="#关于this的指向" class="header-anchor">#</a> 关于this的指向</h3> <h5 id="this对象是基于函数的执行环境绑定的。"><a href="#this对象是基于函数的执行环境绑定的。" class="header-anchor">#</a> this对象是基于函数的执行环境绑定的。</h5> <p>比较常见的例子：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> name<span class="token operator">=</span><span class="token string">&quot;Robert Downey Jr.&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> film<span class="token operator">=</span><span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token string">&quot;Tony Stark&quot;</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">getName</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> myName<span class="token operator">=</span>film<span class="token punctuation">.</span>getName<span class="token punctuation">;</span>
+<span class="token comment">//A</span>
+film<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//打印出的this是&quot;Tony Stark&quot;</span>
+<span class="token comment">//B</span>
+<span class="token function">myName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//打印出的this是&quot;Robert Downey Jr.&quot;</span>
+</code></pre></div><p>A和B的调用为什么会输出两种不同的值呢？</p> <p>从内存的<strong>数据结构</strong>来看：</p> <p>变量film保存着对象的地址，getName的value属性同时又保存着函数的地址，如下图</p> <p><img src="https://gitee.com/youknowHRT/document/raw/master/imgs/this_1.jpg" alt="this_1"></p> <p><code>var myName=film.getName</code>只是把函数的地址指向myName，
+而这个函数，通俗点讲就好比一个演员，在film中叫做Tony，但在现实生活中就是Robert了。this就是film和现实世界这两个环境的指代。</p> <p>如图所示<img src="https://gitee.com/youknowHRT/document/raw/master/imgs/this_2.jpg" alt="this_2"></p> <p>另外，我们知道函数有一个<strong>call</strong>方法，<code>film.getName()</code> 实际是<code>film.getName.call(film)</code>的一种语法糖写法。</p> <p>call方法语法：
+fun.call(thisArg, arg1, arg2, ...)</p> <p>thisArg就是this的指向，
+如果thisArg为undefined或者null，则自动指向全局对象window</p> <p>如上面的<code>myName()</code> 可转化为<code>myName.call(undefined)</code>，this就是undefined,自动指向全局对象。</p> <p>最后补充两点，</p> <p>1、<strong>匿名函数的执行环境具有全局性</strong>，其this对象通常指向window。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> name<span class="token operator">=</span><span class="token string">&quot;Robert Downey Jr.&quot;</span>
+<span class="token keyword">var</span> film<span class="token operator">=</span><span class="token punctuation">{</span>
+   name<span class="token operator">:</span><span class="token string">&quot;Tony Stark&quot;</span><span class="token punctuation">,</span>
+   <span class="token function-variable function">getName</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   	<span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   		<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name
+   	<span class="token punctuation">}</span>  
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+film<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//输出 &quot;Robert Downey Jr.&quot;</span>
+</code></pre></div><p>2、箭头函数不会创建自己的this,它只会从自己的作用域链的上一层继承this</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blog/js/AJAXFirstLearn.html">
+        AJAX初步认知
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.2bbb9c94.js" defer></script><script src="/blog/assets/js/2.e7e819ca.js" defer></script><script src="/blog/assets/js/17.957cf8bc.js" defer></script>
+  </body>
+</html>

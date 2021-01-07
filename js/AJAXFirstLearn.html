@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AJAX初步认知 | Jason の Blog</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/blog/Regeneration.png">
+    <meta name="description" content="学习笔记">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.82d37ace.css" as="style"><link rel="preload" href="/blog/assets/js/app.2bbb9c94.js" as="script"><link rel="preload" href="/blog/assets/js/2.e7e819ca.js" as="script"><link rel="preload" href="/blog/assets/js/11.74e2be92.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.1bfc5ded.js"><link rel="prefetch" href="/blog/assets/js/12.53a485d0.js"><link rel="prefetch" href="/blog/assets/js/13.25b65077.js"><link rel="prefetch" href="/blog/assets/js/14.b92cd59a.js"><link rel="prefetch" href="/blog/assets/js/15.3df6fbde.js"><link rel="prefetch" href="/blog/assets/js/16.a5a0a5fe.js"><link rel="prefetch" href="/blog/assets/js/17.957cf8bc.js"><link rel="prefetch" href="/blog/assets/js/18.285bd278.js"><link rel="prefetch" href="/blog/assets/js/19.caf37a4f.js"><link rel="prefetch" href="/blog/assets/js/3.b6384ca1.js"><link rel="prefetch" href="/blog/assets/js/4.38e7285e.js"><link rel="prefetch" href="/blog/assets/js/5.e5af3f45.js"><link rel="prefetch" href="/blog/assets/js/6.401e096a.js"><link rel="prefetch" href="/blog/assets/js/7.5ae18345.js"><link rel="prefetch" href="/blog/assets/js/8.a16bcccc.js"><link rel="prefetch" href="/blog/assets/js/9.5df7977f.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.82d37ace.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/xin.gif" alt="Jason の Blog" class="logo"> <span class="site-name can-hide">Jason の Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/js/pointToThis.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/vue/componentCommunication.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/css/FirstKnowCssAnimation.html" class="nav-link">
+  CSS
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/js/pointToThis.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/vue/componentCommunication.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/css/FirstKnowCssAnimation.html" class="nav-link">
+  CSS
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/js/pointToThis.html" class="sidebar-link">关于this的指向</a></li><li><a href="/blog/js/AJAXFirstLearn.html" aria-current="page" class="active sidebar-link">AJAX初步认知</a></li><li><a href="/blog/js/CORSandJSONP.html" class="sidebar-link">浏览器同源策略：手动实现CORS、JSONP跨域</a></li><li><a href="/blog/js/VARandLETandCONST.html" class="sidebar-link">var和let、const的区别</a></li><li><a href="/blog/js/debounce&amp;throttle.html" class="sidebar-link">防抖和节流</a></li><li><a href="/blog/js/arrUniq.html" class="sidebar-link">数组去重</a></li><li><a href="/blog/js/shallowCopyAndDeepCopy.html" class="sidebar-link">浅拷贝和深拷贝</a></li><li><a href="/blog/js/JSInteraction.html" class="sidebar-link">JS交互DEMO 更新ing</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/vue/componentCommunication.html" class="sidebar-link">Vue组件通信</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/css/FirstKnowCssAnimation.html" class="sidebar-link">初探CSS动画</a></li><li><a href="/blog/css/CssVerticalAndCenter.html" class="sidebar-link">css垂直居中</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="ajax初步认知"><a href="#ajax初步认知" class="header-anchor">#</a> AJAX初步认知</h1> <p>AJAX是英文 <code>Asynchronous JavaScript and XML</code> 的缩写，意思为异步的 Javascript 和 XML。是一种在无需重新加载整个网页的情况下向浏览器发起请求并接受响应，最后对网页局部进行更新的技术。</p> <p><strong>AJAX 的核心</strong>就是<code>XMLHttpRequest</code>对象，该对象可以发起 http 请求，我们可以监听其 <code>readystate</code> 的变化获得响应。</p> <p>具体代码如下</p> <h5 id="_1-创建一个对象"><a href="#_1-创建一个对象" class="header-anchor">#</a> 1.创建一个对象</h5> <p><code>var request = new XMLHttpRequest()；</code></p> <h5 id="_2-创建-http-请求-设置请求参数"><a href="#_2-创建-http-请求-设置请求参数" class="header-anchor">#</a> 2.创建 http 请求，设置请求参数</h5> <p><code>request.open('get', 'http://www.xxx.com')；</code></p> <h5 id="_3-监听"><a href="#_3-监听" class="header-anchor">#</a> 3.监听</h5> <div class="language-js extra-class"><pre class="language-js"><code>request<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+​  <span class="token keyword">if</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>readyState <span class="token operator">===</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>status<span class="token operator">&gt;=</span><span class="token number">200</span> <span class="token operator">&amp;&amp;</span> request<span class="token punctuation">.</span>status<span class="token operator">&lt;</span><span class="token number">300</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;请求成功&quot;</span><span class="token punctuation">)</span>；
+    ​<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>status<span class="token operator">&gt;=</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;请求失败&quot;</span><span class="token punctuation">)</span>；
+    ​<span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><p><code>onreadystatechanges</code> 会在 <code>readyState</code> 属性改变时被触发调用</p></li> <li><p><code>readyState</code> 返回 <code>XMLHttpRequest</code> 当前所处状态，</p> <p>​ 0：未初始化，尚未调用 open()</p> <p>​ 1：<code>open()</code>方法已被调用</p> <p>​ 2：<code>send()</code>方法已被调用，服务器响应客户端请求，并且头部和状态已可获得</p> <p>​ 3：下载中，<code>responseText</code> 属性已包含部分数据</p> <p>​ 4：请求操作已完成，这代表数据传输已彻底完成或者失败</p></li> <li><p><code>status</code>：服务器返回的状态码</p></li></ul> <h5 id="_4-发送请求"><a href="#_4-发送请求" class="header-anchor">#</a> 4.发送请求</h5> <p><code>request.send();</code></p> <p style="font-size:20px;font-weight:900;">总结</p> <p><strong>AJAX 的优点</strong>：</p> <ol><li>最大优点就是无刷新更新页面</li> <li>异步与服务器通讯</li> <li>减轻服务器的负载和带宽</li> <li>基于标准被广泛支持</li></ol> <p><strong>AJAX 的缺点</strong>：</p> <ol><li>干掉了 Back 和 History 功能，即对浏览器机制的破坏</li> <li>安全问题</li> <li>影响 SEO</li></ol> <p><strong>应用场景：</strong></p> <p>场景 1. 数据验证</p> <p>场景 2. 按需取数据</p> <p>场景 3. 自动更新页面</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/js/pointToThis.html" class="prev">
+        关于this的指向
+      </a></span> <span class="next"><a href="/blog/js/CORSandJSONP.html">
+        浏览器同源策略：手动实现CORS、JSONP跨域
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.2bbb9c94.js" defer></script><script src="/blog/assets/js/2.e7e819ca.js" defer></script><script src="/blog/assets/js/11.74e2be92.js" defer></script>
+  </body>
+</html>
